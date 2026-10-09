@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Axon Capital</title>
+<meta name="description" content="Axon Capital — systematic, technology-driven trading.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230b1220'/><path d='M8 24 16 8l8 16' stroke='%2338bdf8' stroke-width='3' fill='none'/></svg>">
+<style>
+  :root { --bg:#0b1220; --fg:#e6edf6; --muted:#8b98ab; --accent:#38bdf8; --line:#1e293b; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--fg); font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "PingFang TC", sans-serif; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .wrap { max-width:960px; margin:0 auto; padding:0 24px; }
+  header { border-bottom:1px solid var(--line); }
+  header .wrap { display:flex; justify-content:space-between; align-items:center; height:64px; }
+  .logo { font-weight:700; letter-spacing:.08em; color:var(--fg); }
+  .logo span { color:var(--accent); }
+  nav a { color:var(--muted); margin-left:24px; font-size:14px; }
+  .hero { padding:120px 0 96px; }
+  .hero h1 { font-size:clamp(32px, 6vw, 56px); line-height:1.15; font-weight:700; }
+  .hero h1 em { font-style:normal; color:var(--accent); }
+  .hero p { margin-top:20px; max-width:600px; color:var(--muted); font-size:18px; }
+  section { padding:72px 0; border-top:1px solid var(--line); }
+  h2 { font-size:13px; letter-spacing:.15em; text-transform:uppercase; color:var(--accent); margin-bottom:28px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:24px; }
+  .card { border:1px solid var(--line); border-radius:10px; padding:24px; }
+  .card h3 { font-size:18px; margin-bottom:8px; }
+  .card p { color:var(--muted); font-size:15px; }
+  .zh { color:var(--muted); font-size:15px; margin-top:12px; }
+  footer { border-top:1px solid var(--line); padding:32px 0; color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">AXON<span>.</span>CAPITAL</div>
+    <nav><a href="#about">About</a><a href="#approach">Approach</a><a href="#contact">Contact</a></nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <h1>Systematic trading,<br><em>built on technology.</em></h1>
+    <p>Axon Capital is a quantitative trading firm. We combine research, data and low-latency engineering to trade in the Taiwan equity market.</p>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>About</h2>
+      <p>We are a small team of researchers and engineers. Every part of our process — from market data to execution — is designed, built and run in-house.</p>
+      <p class="zh">Axon Capital 是一家量化交易公司。我們以研究、數據與低延遲工程，參與台灣股票市場。</p>
+    </div>
+  </section>
+
+  <section id="approach">
+    <div class="wrap">
+      <h2>Approach</h2>
+      <div class="grid">
+        <div class="card"><h3>Research</h3><p>Statistical models built on clean, carefully validated market data.</p></div>
+        <div class="card"><h3>Technology</h3><p>Our own market data, risk and execution systems, tuned for speed and reliability.</p></div>
+        <div class="card"><h3>Risk</h3><p>Strict, automated risk controls at every step of the trading process.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:contact@axoncaps.com">contact@axoncaps.com</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="y">2026</span> Axon Capital. All rights reserved.</div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
